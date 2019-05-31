@@ -1,0 +1,12 @@
+version: '3'
+services:
+  php:
+    hostname: web
+    domainname: dev.php
+    image: "indexing/php"
+    ports:
+    - '6080:8080'
+    volumes:
+    - ./php:/app
+
+

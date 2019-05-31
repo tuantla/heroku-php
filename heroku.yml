@@ -1,4 +1,7 @@
 build:
   docker:
     web: php/Dockerfile
-#    worker: hello/Dockerfile
+  config:
+    UP_TIME: '15:15:00'
+run:
+  web: 'bin/docker-entrypoint.sh'
